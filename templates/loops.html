@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    {% include 'nav.html' %}
+    <div class="container">
+        <h1>Loops</h1>
+        Python has two primitive loop commands: <span>while loops</span> and <span>for loops</span>
+
+        <section>
+            <h2>For-in Loop</h2>
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or
+                a string).
+                This is less like the for keyword in other programming languages, and works more like an iterator method
+                as found in other object-orientated programming languages.
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+            <div>
+                <p>Print each fruit in a fruit list:</p>
+                <code>fruits = ["apple", "banana", "cherry"]<br>
+                    for x in fruits: <br>
+                    print(x)</code>
+                <p>The for loop does not require an indexing variable to set beforehand.</p>
+            </div>
+        </section>
+        <section>
+            <h2>While loop</h2>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+            <div>
+                <p>Print i as long as i is less than 6:</p>
+                <code>i = 1<br>
+                    while i < 6: <br>
+                        print(i) <br>
+                        i +=1</code>
+            </div>
+            <p>Note: remember to increment i, or else the loop will continue forever. The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</p>
+        </section>
+        <section>
+            <h2>Range</h2>
+            <p>Example: Create a sequence of numbers from 0 to 5, and print each item in the sequence:</p>
+                <code>
+                    x = range(6)<br>
+                    for n in x:<br>
+                    print(n)
+                </code>
+                <p>Definition and Usage: The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.</p>
+        </section>
+    </div>
+</body>
+
+</html>

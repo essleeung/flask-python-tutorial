@@ -3,3 +3,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  color: mediumpurple;
+}
+
+.code {
+  color: lightcyan;
+  display: inline-block;
+  background-color: black;
+}
+
+.logo {
+  max-width: 200px;
+  margin: 30px;
+}
